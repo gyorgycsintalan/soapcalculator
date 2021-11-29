@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.soap.calculator.org/calculator_schema" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.soap.calculator.org/calculator_schema">
+  
+    <xs:element name="getAdditionRequest">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="operand1" type="xs:double"></xs:element>
+	    		<xs:element name="operand2" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType>    
+    </xs:element>
+
+    <xs:element name="getSubstractionRequest">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="operand1" type="xs:double"></xs:element>
+	    		<xs:element name="operand2" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType>    
+    </xs:element>
+    
+    <xs:element name="getMultiplicationRequest">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="operand1" type="xs:double"></xs:element>
+	    		<xs:element name="operand2" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType>    
+    </xs:element>
+    
+     <xs:element name="getDivisionRequest">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="operand1" type="xs:double"></xs:element>
+	    		<xs:element name="operand2" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType>    
+    </xs:element>   
+
+    <xs:element name="getAdditionResponse">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="result" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType>    	
+    </xs:element>
+    
+    <xs:element name="getSubstractionResponse">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="result" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType> 
+    </xs:element>
+
+    <xs:element name="getMultiplicationResponse">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="result" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType>     
+    </xs:element>
+    
+     <xs:element name="getDivisionResponse">
+	    <xs:complexType>
+	    	<xs:sequence>
+	    		<xs:element name="result" type="xs:double"></xs:element>
+	    	</xs:sequence>
+	    </xs:complexType>      
+    </xs:element>   
+    
+</xs:schema>
